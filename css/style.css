@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*Reset*/
+* {margin:0; padding:0;}
+li,ol {list-style-type:none;}
+a {text-decoration:none; outline:0; color:#555;}
+img {border:0;}
+body {font-family:'Roboto', sans-serif;}
+
+header {  position: fixed; top:0; left:0; width: 100%; z-index: 10; background-color:#fff;}
+
+h1 {text-align:center; margin:20px 0;}
+ul.social {float:left; position:absolute; top:20px; left:15px;}
+/*IR(Image Replacements) 기법*/
+ul.social li {width:32px; height:32px;
+	 background:url(../images/social.png) no-repeat;
+	 text-indent:-9999px; float:left;
+}
+ul.social li:nth-child(2) {background-position:-32px 0;}
+ul.social li:nth-child(3) {background-position:-64px 0;}
+ul.social li:nth-child(4) {background-position:-96px 0;}
+
+ul.loginMenu {float:right; position:absolute; top:20px; right:15px;}
+ul.loginMenu li {float:left;}
+ul.loginMenu li a {font-size:12px; padding-left:30px;}
+
+/*
+ul.mainMenu {width:960px; margin:0 auto; overflow:hidden;}
+overflow를 쓰게되면 나중에 드롭다운메뉴가 적용되지 않는다
+		text-align:center; line-height:50px;}
+*/
+ul.mainMenu {text-align:center; margin-top: 30px;}
+ul.mainMenu li {display:inline-block;}
+ul.mainMenu li a {display:block; padding:20px 30px; }
+
+#nav {margin-top: 50px; }
+
+#main {
+	margin-top: 170px;
+	height:500px; border-top:3px solid red;
+	background-image:url(../images/main.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#main div {text-align:center; color:white; line-height:80px; }
+#main div:nth-child(1) {font-size:50px;letter-spacing:15px;}
+#main div:nth-child(2) {font-size:30px;}
+
+#list {text-align:center; margin-bottom:100px;}
+#list h2 {
+	border-bottom:3px dashed #ddd;font-size:14px;
+	padding:10px 0;
+}
+article {display:inline-block; padding:40px;}
+/*article {display:inline-block; width:300px; margin:0 20px;}*/
+article h3 {color:#ddd;}
+
+footer {text-transform:uppercase; border-top:2px solid #ddd;
+line-height:40px; padding:0 20px; height:40px;/*overflow:hidden*/}
+footer h2 {float:left; font-size:14px;}
+footer p {float:right; font-size:14px;}
