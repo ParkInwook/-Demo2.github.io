@@ -9,7 +9,7 @@ body {font-family:'Roboto', sans-serif;}
 header {  position: fixed; top:0; left:0; width: 100%; z-index: 10; background-color:#fff;}
 
 h1 {text-align:center; margin:20px 0;}
-ul.social {float:left; position:absolute; top:20px; left:15px;}
+ul.social { position:absolute; top:20px; left:15px;}
 /*IR(Image Replacements) 기법*/
 ul.social li {width:32px; height:32px;
 	 background:url(../images/social.png) no-repeat;
@@ -19,7 +19,7 @@ ul.social li:nth-child(2) {background-position:-32px 0;}
 ul.social li:nth-child(3) {background-position:-64px 0;}
 ul.social li:nth-child(4) {background-position:-96px 0;}
 
-ul.loginMenu {float:right; position:absolute; top:20px; right:15px;}
+ul.loginMenu {position:absolute; top:20px; right:15px;}
 ul.loginMenu li {float:left;}
 ul.loginMenu li a {font-size:12px; padding-left:30px;}
 
